@@ -3,6 +3,8 @@
     margin: 0;
     padding:0;
 } */
+
+/* first page */
 h1{
     place-content: center;
     display: flex;
@@ -17,6 +19,8 @@ h1{
     color: white;
     /* padding-top: 12px; */
     padding-bottom: 19px;
+    margin: 12px;
+    border-radius: 30px;
     
   }
 .Login{
@@ -25,11 +29,15 @@ h1{
     width: 90%;
     height: 100%;
 }
+.lm{
+    margin-left: 14px;
+}
 
   form{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    
 }
 input[type=Email], input[type=password] {
         width: 94%;
@@ -60,4 +68,8 @@ input[type=Email], input[type=password] {
   .welcome {
     margin-left: 12px;
   }
+  p{
+    font-size: 18px;
+  }
+  /* end  */
   
