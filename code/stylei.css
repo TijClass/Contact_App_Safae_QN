@@ -218,12 +218,8 @@ textarea{
     border-radius: 50px;
     width: 17px;
   }
-  
-  .logo1{
-    height: auto;
-    background-color: white;
-    float: left;
-    width: 28px;
-    border: 1px solid black;
-    color: black; 
+  .rounded{
+    width: 50px;
+    position: absolute;
+    top: 5px;
   }
