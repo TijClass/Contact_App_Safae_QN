@@ -1,0 +1,162 @@
+/* Bordered form */
+/* * {
+    margin: 0;
+    padding:0;
+} */
+
+/* first page */
+h1{
+    place-content: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    border: 3px solid #f1f1f1;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #BB6BB5;
+    color: white;
+    /* padding-top: 12px; */
+    padding-bottom: 19px;
+    margin: 12px;
+    border-radius: 30px;
+    
+  }
+.Login{
+    background-color: #E28BDC;
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+}
+.lm{
+    margin-left: 14px;
+}
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+input[type=Email], input[type=password],input[type=text],input[type=number] {
+     width: 94%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .btn1 {
+    background-color: #af3aa0;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 14%;
+    border-radius: 16px;
+  }
+  .btn2{
+    float: right;
+    margin: 19px;
+    right: 120px;
+    position: relative;
+  }
+  .welcome {
+    margin-left: 12px;
+  }
+  p{
+    font-size: 18px;
+  }
+  /* end  */
+/* *********************************************************** */
+  /* add person */
+
+
+.contact{
+  position: relative;
+  background-size: cover;
+  background-color: #D187CC;
+  box-shadow:10px 15px 5px #75016D;
+} 
+
+.contact h2{
+  color: rgb(255 255 255);
+  text-align: center;
+  font-size: 50px;
+  font-family: "Segoe UI"; 
+  position: relative;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+label{
+  display: block;
+  color:black;
+}
+textarea{
+  width: 90%;
+  padding: 10px;
+  width: 94%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+.formgroup{
+  width: calc(100% - 700px);
+  height: 100px;
+  margin: auto;
+}
+.btn3{
+  padding: 13px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #F4C9F7;
+  box-shadow:10px 5px 5px #75016D ;
+  position: relative;
+    top: 20px;
+    float: right;
+
+}
+.cat:hover{
+  background-color: #F4C9F7;
+  color:rgb(0, 0, 0);
+}
+.add {
+  margin-left: 14px;
+}
+.radios {
+  display: inline-flex;
+  position: relative;
+    left: 36%;
+    gap: 33px 21px;
+}
+
+/* ************************************************************** */
+  /* end */
+  /* logout */
+  .logout{
+    background-color:#BB6BB5;
+    position: relative;
+    height: 10vh;
+    width: 90%;
+    left: 9%;
+    
+  }
+  .btn4{
+    position: absolute;
+    right: 15px;
+    top: 16px;
+  }
+  .title{
+    float: left;
+    padding-left: 9px;
+  }
