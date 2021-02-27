@@ -179,9 +179,7 @@ textarea{
     display: flex;
     position: relative;
   }
-  .Search{
-    
-  }
+  
   .btn5{
     margin-top: 8px;
     padding: 5px;
@@ -213,7 +211,7 @@ textarea{
   .line2{
     background-color:#F9BFFD;
   }
-  span{
+  .drop{
     background-color: black;
     color: white;
     float: right;
@@ -221,3 +219,11 @@ textarea{
     width: 17px;
   }
   
+  .logo1{
+    height: auto;
+    background-color: white;
+    float: left;
+    width: 28px;
+    border: 1px solid black;
+    color: black; 
+  }
