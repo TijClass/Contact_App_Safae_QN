@@ -1,0 +1,63 @@
+/* Bordered form */
+/* * {
+    margin: 0;
+    padding:0;
+} */
+h1{
+    place-content: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    border: 3px solid #f1f1f1;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #BB6BB5;
+    color: white;
+    /* padding-top: 12px; */
+    padding-bottom: 19px;
+    
+  }
+.Login{
+    background-color: #E28BDC;
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+}
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+input[type=Email], input[type=password] {
+        width: 94%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .btn1 {
+    background-color: #af3aa0;
+    color: white;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 14%;
+    border-radius: 16px;
+  }
+  .btn2{
+    float: right;
+    margin: 19px;
+    right: 120px;
+    position: relative;
+  }
+  .welcome {
+    margin-left: 12px;
+  }
+  
