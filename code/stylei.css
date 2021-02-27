@@ -120,7 +120,7 @@ textarea{
   padding-left: 60px;
   padding-right: 60px;
   background-color: #F4C9F7;
-  box-shadow:10px 5px 5px #75016D ;
+  box-shadow:10px 5px 5px #75016D;
   position: relative;
     top: 20px;
     float: right;
@@ -138,6 +138,14 @@ textarea{
   position: relative;
     left: 36%;
     gap: 33px 21px;
+}
+.button{
+  background-color: #fffdff;
+    color: rgb(0, 0, 0);
+    
+    cursor: pointer;
+    
+    box-shadow: 10px 5px 5px #75016D;
 }
 
 /* ************************************************************** */
@@ -160,3 +168,56 @@ textarea{
     float: left;
     padding-left: 9px;
   }
+  .listcont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+  }
+  .addin{
+    grid-area: 2/3 / 3/4;
+    display: flex;
+    position: relative;
+  }
+  .Search{
+    
+  }
+  .btn5{
+    margin-top: 8px;
+    padding: 5px;
+    background-color: #fffdff;
+    color: rgb(0, 0, 0);
+    
+    cursor: pointer;
+    
+    box-shadow: 10px 5px 5px #75016D;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    float: right;
+    margin-right: 18px;
+    box-shadow: 10px 5px 5px #e37beb;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .line1{
+    background-color: #F7ADF4;
+  }
+  .line2{
+    background-color:#F9BFFD;
+  }
+  span{
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 50px;
+    width: 17px;
+  }
+  
