@@ -22,7 +22,7 @@
         
             <div class="container">
             
-            <form action="indexi.html" method="post">
+            <form action="login.php" method="post">
                 <h2>Login </h2>
                 
                 <div class="Login">
@@ -59,5 +59,24 @@
     </div>
     </header>   
      <!--end  -->
+
+     <?php
+     $msg = '';
+     
+     if (isset($_POST['login']) && !empty($_POST['uname']) 
+        && !empty($_POST['password'])) {
+         
+        if ($_POST['uname'] == 'tutorialspoint' && 
+           $_POST['psw'] == '1234') {
+           $_SESSION['valid'] = true;
+           $_SESSION['timeout'] = time();
+           $_SESSION['uname'] = 'tutorialspoint';
+           
+           echo 'You have entered valid use name and password';
+        }else {
+           $msg = 'Wrong email or password';
+        }
+     }
+    ?>
 </body>
 </html>
