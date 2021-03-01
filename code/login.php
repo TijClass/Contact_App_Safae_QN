@@ -8,6 +8,18 @@
     <title>TM Great</title>
 </head>
 <body>
+
+    <!--Structure to insert logo @tijani abdellatif-->
+     <div class="container_logo">
+        <!--site body-->
+                <div class="logo">
+                    <a href="">
+                        <img src="" alt="logo" class="rounded">
+                    </a>
+                    </div>
+     </div>
+              
+                
     <!-- first page -->
     <div class="container_logo">
         <!--site body-->
