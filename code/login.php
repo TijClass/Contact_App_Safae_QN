@@ -14,7 +14,7 @@
         <!--site body-->
                 <div class="logo">
                     <a href="">
-                        <img src="" alt="logo" class="rounded">
+                        <img src="logo1.png" alt="logo" class="rounded">
                     </a>
                     </div>
      </div>
@@ -22,13 +22,7 @@
                 
     <!-- first page -->
     <div class="container_logo">
-        <!--site body-->
-                <div class="logo">
-                    <a href="">
-                        <img src="logo1.png" alt="logo" class="rounded">
-                    </a>
-                    </div>
-     </div>
+    
     <header>
         <h1>Welcome TM Great</h1>
         
