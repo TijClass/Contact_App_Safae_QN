@@ -111,8 +111,8 @@
       
       if(isset($_GET['logout'])) {
         session_destroy();
-        unset($_SESSION['username']);
-        header('location:login.php');
+        unset($_SESSION['submit']);
+        header('login.php');
     }
     ?>
     
