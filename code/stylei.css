@@ -52,11 +52,11 @@ input[type=Email], input[type=password],input[type=text],input[type=number] {
   .btn1 {
     background-color: #af3aa0;
     color: white;
-    padding: 8px 20px;
+    padding: 8px 11px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 14%;
+    width: 23%;
     border-radius: 16px;
   }
   .btn2{
@@ -223,3 +223,38 @@ textarea{
     position: absolute;
     top: 5px;
   }
+
+
+  @media screen and (max-width: 600px) {
+    .radios {
+      display: inline-flex;
+      position: relative;
+      left: 17%;
+      gap: 30px 21px;
+    }
+    .formgroup{
+      width: 54vw;
+    }
+    .all {
+
+
+    }
+    .btn2 {
+      float: right;
+      margin: 19px;
+      right: 10px;
+      position: relative;
+  }
+  .btn1 {
+    background-color: #af3aa0;
+    color: white;
+    padding: 8px 11px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 16px;
+}
+
+  }
+  

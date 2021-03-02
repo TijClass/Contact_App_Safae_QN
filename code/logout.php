@@ -8,7 +8,7 @@
     <title>TM Great</title>
 </head>
 <body>
-    
+    <div class="all">
     <div class="container_logo">
       <!--site body-->
               <div class="logo">
@@ -105,7 +105,7 @@
         </tr>
        
       </table>
-
+</div>
 
       <?php
       
