@@ -1,3 +1,8 @@
+<?php include'functions.php';
+$conn = OpenCon();
+// CloseCon($conn);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +44,7 @@
                   <label for="psw"><b>Password:</b></label>
                   <input type="password" placeholder="Enter Password" name="psw" required>
               
-                  <button class="btn1" type="submit">Login</button>
+                  <button class="btn1" name="login" type="submit">Login</button>
                   <label class="btn2">
                     <input  type="checkbox" checked="checked" name="remember"> Remember me
                   </label>
@@ -57,7 +62,7 @@
                     numquam repudiandae eligendi possimus, exercitationem ea<br>
                     suscipit distinctio cum molestiae qui! Maiores earum dolores qui<br>
                 </p>
-                <button class="btn2" type="button" class="cancelbtn"> < Read more</button>
+                <button class="btn2" name="login" type="button" class="cancelbtn"> < Read more</button>
             </div>
         </div>
 
@@ -69,10 +74,10 @@
      <?php
      $msg = '';
      
-     if (isset($_POST['login']) && !empty($_POST['uname']) 
-        && !empty($_POST['password'])) {
+     if (isset($_POST['login']) ) 
+        {
          
-        if ($_POST['uname'] == 'tutorialspoint' && 
+        if ($_POST['uname'] == 'tutorialspoint@gmail.com' && 
            $_POST['psw'] == '1234') {
            $_SESSION['valid'] = true;
            $_SESSION['timeout'] = time();
