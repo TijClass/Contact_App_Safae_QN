@@ -1,3 +1,11 @@
+<?php include'functions.php';
+session_start();
+if(!isset($_SESSION["user"])){
+  header("location: login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +29,7 @@
     <div class="logout">
         
         <h1 class="title">My Web App</h1>
-        <button class="btn4" type="submit" form="nameform" value="Send"> < Logout</button>
+        <button class="btn4" type="submit" form="nameform" name="logout" value="Send"> < Logout</button>
     </div>
    
     <div class="listcont">
@@ -38,6 +46,7 @@
     </div>
     
     <table >
+      <tbody>
         <tr class="line1">
           <th>Id</th>
           <th>FirstName</th>
@@ -114,6 +123,7 @@
         <!-- <div class="add">
         <input type="text" id="fname" name="fname" placeholder="Add a person">
     </div> -->
+    <form method="POST" action="contact.php">
         <div class="formgroup">
             <label for="fname">First name:</label>
             <input type="text" id="fname" name="fname" placeholder="Enter your first name">
@@ -124,7 +134,7 @@
         </div>
         <div class="formgroup ">
             <label for="lname">Adress:</label>
-            <input type="text" id="lname" name="lname" placeholder="Enter your Adress">
+            <input type="text" id="lname" name="Adress" placeholder="Enter your Adress">
         </div><div class="formgroup one">
             <label for="lname">Phone:</label>
             <input type="number" id="Pname" name="Pname" placeholder="Enter your Phone Number">
@@ -134,30 +144,24 @@
             <input type="email" id="email" name="email" placeholder="Enter your email">
         </div>
             <div class="radios">
-             <input type="radio" name="unit" value="">Familly
-             <input type="radio" name="unit" value="">Friend
-            <input type="radio" name="unit" value="">Businness
+             <input type="radio" name="unit1" value="">Familly
+             <input type="radio" name="unit2" value="">Friend
+            <input type="radio" name="unit3" value="">Businness
             </div>
         <div class="formgroup ">
             <label for="lname">Notes:</label>
-           <textarea  name="lname" id="lname" placeholder="Enter your Notes" ></textarea> 
+           <textarea  name="area" id="area" placeholder="Enter your Notes" ></textarea> 
         </div>
         
     </div>
         <div class="formgroup ">
-            <button class="btn3" type="submit" form="nameform" value="Send">Submit</button>
+            <button class="btn3" name="send" type="submit" form="nameform" value="Send">Submit</button>
         </div>
             </div>
           </div>
         </div>
-      <?php
-      
-      if(isset($_GET['logout'])) {
-        session_destroy();
-        unset($_SESSION['submit']);
-        header('login.php');
-    }
-    ?>
+        </form>
+     
     
 </body>
 </html>

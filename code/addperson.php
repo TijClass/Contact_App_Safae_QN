@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,15 @@
     <link href="stylei.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<html>
+<head>
+    <title>Add Data</title>
+</head>
+ 
+<body>
+
+</body>
+</html>
     <!-- third page -->
     <div class="container3">
         

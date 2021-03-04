@@ -1,7 +1,27 @@
-<?php include'functions.php';
-$conn = OpenCon();
-// CloseCon($conn);
+<?php
+ include'functions.php';
+
+session_start();
+if (isset($_POST['login'])){
+   $uname = $_POST['uname']; 
+   $psw = $_POST['psw'];
+   $query = "SELECT * FROM users WHERE email='".$uname."' AND password='".$psw."' LIMIT 1";   
+   //    $result = mysqli_query($conn,$query);
+   $result = $conn->query($query);   
+   if($result->num_rows==1){
+       //successed
+    $_SESSION["user"] = $uname;  // kkkkk
+    header("location: contact.php");
+   }else{
+       //failed
+    header("location: login.php");
+   }
+//    
+
+}
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +34,8 @@ $conn = OpenCon();
 </head>
 <body>
 
+
+<section class="loginall">
     <!--Structure to insert logo @tijani abdellatif-->
      <div class="container_logo">
         <!--site body-->
@@ -31,7 +53,7 @@ $conn = OpenCon();
     <header>
         <h1>Welcome TM Great</h1>
         
-            <div class="container">
+            <div class="container" class="d-flex justify-content-center">
             
             <form action="login.php" method="post">
                 <h2>Login </h2>
@@ -52,7 +74,7 @@ $conn = OpenCon();
                 </div>
              
               </form> 
-              <hr>
+              <hr class="hr">
        
         <div class="welcome">
             <h2>Welcome sub_title </h2>
@@ -70,24 +92,6 @@ $conn = OpenCon();
     </div>
     </header>   
      <!--end  -->
-
-     <?php
-     $msg = '';
-     
-     if (isset($_POST['login']) ) 
-        {
-         
-        if ($_POST['uname'] == 'tutorialspoint@gmail.com' && 
-           $_POST['psw'] == '1234') {
-           $_SESSION['valid'] = true;
-           $_SESSION['timeout'] = time();
-           $_SESSION['uname'] = 'tutorialspoint';
-           
-           echo 'You have entered valid use name and password';
-        }else {
-           $msg = 'Wrong email or password';
-        }
-     }
-    ?>
+</section>
 </body>
 </html>
