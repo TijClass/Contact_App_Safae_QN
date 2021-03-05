@@ -1,0 +1,289 @@
+/* Bordered form */
+/* * {
+    margin: 0;
+    padding:0;
+} */
+
+/* first page */
+.loginall{
+  background-image: linear-gradient(#BB6BB5,rgb(247, 186, 237));
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0px;
+
+}
+h1{
+    place-content: center;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    
+}
+.container{
+    border: 3px solid #bb6bb5;
+    box-shadow: #bb6bb5 14px 9px 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #BB6BB5;
+    color: white;
+    /* padding-top: 12px; */
+    /* padding-bottom: 19px;
+    margin: 12px; */
+    border-radius: 30px;
+    position: absolute;
+    place-content: center;
+    place-self: center;
+    left: 19rem;
+    bottom: 33vh;
+    box-shadow: #bb6bb5 12px 17px 12px;
+  }
+.Login{
+    background-color: #E28BDC;
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+}
+.lm{
+    margin-left: 14px;
+}
+
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+input[type=Email], input[type=password],input[type=text],input[type=number] {
+     width: 94%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .btn1 {
+    background-color: #af3aa0;
+    color: white;
+    padding: 8px 11px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 23%;
+    border-radius: 16px;
+  }
+  .btn2{
+    float: right;
+    margin: 19px;
+    right: 120px;
+    position: relative;
+  }
+  .welcome {
+    margin-left: 12px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .hr{
+    margin: 12px;
+  }
+  /* end  */
+/* *********************************************************** */
+  /* add person */
+
+
+.contact{
+  position: relative;
+  background-size: cover;
+  background-color: #D187CC;
+  box-shadow:10px 15px 5px #75016D;
+} 
+
+.contact h2{
+  color: rgb(255 255 255);
+  text-align: center;
+  font-size: 50px;
+  font-family: "Segoe UI"; 
+  position: relative;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+label{
+  display: block;
+  color:black;
+}
+textarea{
+  width: 90%;
+  padding: 10px;
+  width: 94%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+.formgroup{
+  width: calc(100% - 700px);
+  height: 100px;
+  margin: auto;
+}
+.btn3{
+  padding: 13px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #F4C9F7;
+  box-shadow:10px 5px 5px #75016D;
+  position: relative;
+    top: 20px;
+    float: right;
+
+}
+.cat:hover{
+  background-color: #F4C9F7;
+  color:rgb(0, 0, 0);
+}
+.add {
+  margin-left: 14px;
+}
+.radios {
+    display: inline-flex;
+    position: absolute;
+    left: 31%;
+    gap: 33px 21px;
+    bottom: 12%;
+}
+.button{
+  background-color: #fffdff;
+    color: rgb(0, 0, 0);
+    
+    cursor: pointer;
+    
+    box-shadow: 10px 5px 5px #75016D;
+}
+
+/* ************************************************************** */
+  /* end */
+  /* logout */
+  .logout{
+    background-color:#BB6BB5;
+    position: relative;
+    height: 10vh;
+    width: 90%;
+    left: 9%;
+    
+  }
+  .btn4{
+    position: absolute;
+    right: 15px;
+    top: 16px;
+  }
+  .title{
+    float: left;
+    padding-left: 9px;
+  }
+  .listcont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+  }
+  .addin{
+    grid-area: 2/3 / 3/4;
+    display: flex;
+    position: relative;
+  }
+  
+  .btn5{
+    margin-top: 8px;
+    padding: 5px;
+    background-color: #fffdff;
+    color: rgb(0, 0, 0);
+    
+    cursor: pointer;
+    
+    box-shadow: 10px 5px 5px #75016D;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    float: right;
+    margin-right: 18px;
+    box-shadow: 10px 5px 5px #e37beb;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .line1{
+    background-color: #F7ADF4;
+  }
+  .line2{
+    background-color:#F9BFFD;
+  }
+  .drop{
+    background-color: black;
+    color: white;
+    float: right;
+    border-radius: 50px;
+    width: 17px;
+  }
+  .rounded{
+    width: 50px;
+    position: absolute;
+    top: 5px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .radios {
+      display: inline-flex;
+      position: relative;
+      left: 17%;
+      gap: 30px 21px;
+    }
+    .formgroup{
+      width: 54vw;
+    }
+    .all {
+
+
+    }
+    .btn2 {
+      float: right;
+      margin: 19px;
+      right: 10px;
+      position: relative;
+  }
+  .btn1 {
+    background-color: #af3aa0;
+    color: white;
+    padding: 8px 11px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 16px;
+}
+
+  }
+
+.modal{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 95vh;
+    margin: 2.5vh 10vw;
+}
